@@ -1,0 +1,20 @@
+<h2>Courses</h2>
+
+<input
+type="text"
+placeholder="Search Course"
+[(ngModel)]="searchTerm">
+
+<br><br>
+
+<app-course-card
+*ngFor="let course of filteredCourses"
+[name]="course.name"
+[code]="course.code"
+[credits]="course.credits"
+[grade]="course.grade">
+</app-course-card>
+
+<p *ngIf="filteredCourses.length==0">
+No courses found
+</p>

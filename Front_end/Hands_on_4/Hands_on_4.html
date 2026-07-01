@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands-On 4 - Async JavaScript & API Integration</title>
+    <link rel="stylesheet" href="hands_on_4.css">
+</head>
+
+<body>
+
+    <h1>Hands-On 4</h1>
+
+    <h2>Courses</h2>
+
+    <div id="courseContainer">
+        Loading courses...
+    </div>
+
+    <hr>
+
+    <section id="notifications">
+
+        <h2>Notifications (Posts)</h2>
+
+        <div id="loading"></div>
+
+        <div id="error"></div>
+
+        <button id="retryBtn" style="display:none;">
+            Retry
+        </button>
+
+        <div id="postsContainer"></div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script type="module" src="Hands_on_4.js"></script>
+
+</body>
+</html>

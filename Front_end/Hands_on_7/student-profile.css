@@ -1,0 +1,19 @@
+form{
+    width:350px;
+    margin:auto;
+}
+
+input{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+div{
+    color:red;
+    font-size:13px;
+}
+
+button{
+    padding:10px 20px;
+}
