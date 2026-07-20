@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Student Portal</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<a href="#mainContent"
+class="skip-link">
+
+Skip to Main Content
+
+</a>
+
+<header>
+
+<div class="logo">
+
+<h1>
+
+🎓 Student Portal
+
+</h1>
+
+<p>
+
+Accessible Learning Platform
+
+</p>
+
+</div>
+
+<nav aria-label="Main navigation">
+
+<ul>
+
+<li>
+
+<a href="#"
+aria-current="page">
+
+🏠 Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#courses">
+
+📚 Courses
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#profile">
+
+👤 Profile
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#contact">
+
+📞 Contact
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<main id="mainContent">
+
+<section class="search-section">
+
+<h2>
+
+🔍 Search Courses
+
+</h2>
+
+<label for="search">
+
+Search Course
+
+</label>
+
+<input
+
+type="search"
+
+id="search"
+
+placeholder="Search HTML, CSS, JavaScript..."
+
+autocomplete="off"
+
+aria-describedby="resultCount">
+
+<p
+
+id="resultCount"
+
+role="status"
+
+aria-live="polite">
+
+3 Courses Found
+
+</p>
+
+</section>
+
+<section id="courses">
+
+<h2>
+
+📚 Available Courses
+
+</h2>
+
+<div class="course-container">
+
+<div
+
+class="course-card"
+
+tabindex="0"
+
+role="button"
+
+aria-label="Open HTML Course">
+
+<img
+
+src="images/html.png"
+
+alt="HTML Programming Course">
+
+<h3>
+
+HTML
+
+</h3>
+
+<p>
+
+Learn the fundamentals of web development using HTML5.
+
+</p>
+
+<button
+
+type="button"
+
+aria-label="Enroll in HTML Course">
+
+Enroll Now
+
+</button>
+
+</div>
+
+<div
+
+class="course-card"
+
+tabindex="0"
+
+role="button"
+
+aria-label="Open CSS Course">
+
+<img
+
+src="images/css.png"
+
+alt="CSS Styling Course">
+
+<h3>
+
+CSS
+
+</h3>
+
+<p>
+
+Master responsive layouts, Flexbox, Grid and animations.
+
+</p>
+
+<button
+
+type="button"
+
+aria-label="Enroll in CSS Course">
+
+Enroll Now
+
+</button>
+
+</div>
+
+<div
+
+class="course-card"
+
+tabindex="0"
+
+role="button"
+
+aria-label="Open JavaScript Course">
+
+<img
+
+src="images/javascript.png"
+
+alt="JavaScript Programming Course">
+
+<h3>
+
+JavaScript
+
+</h3>
+
+<p>
+
+Build dynamic and interactive web applications.
+
+</p>
+
+<button
+
+type="button"
+
+aria-label="Enroll in JavaScript Course">
+
+Enroll Now
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= PROFILE SECTION ================= -->
+
+<section id="profile" class="profile">
+
+<h2>
+
+👤 Student Profile
+
+</h2>
+
+<form>
+
+<label for="name">
+
+Full Name
+
+</label>
+
+<input
+id="name"
+type="text"
+placeholder="Enter your full name"
+autocomplete="name"
+required>
+
+<label for="email">
+
+Email Address
+
+</label>
+
+<input
+id="email"
+type="email"
+placeholder="Enter your email"
+autocomplete="email"
+required>
+
+<label for="phone">
+
+Phone Number
+
+</label>
+
+<input
+id="phone"
+type="tel"
+placeholder="Enter your phone number"
+autocomplete="tel"
+required>
+
+<button
+type="submit"
+aria-label="Save Student Profile">
+
+Save Profile
+
+</button>
+
+</form>
+
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section id="contact" class="contact">
+
+<h2>
+
+📞 Contact Us
+
+</h2>
+
+<p>
+
+Need help?
+
+Contact the Student Support Team.
+
+</p>
+
+<p>
+
+📧 Email:
+support@studentportal.com
+
+</p>
+
+<p>
+
+📱 Phone:
++91 98765 43210
+
+</p>
+
+<p>
+
+🕘 Working Hours
+
+Monday - Friday
+
+9:00 AM - 5:00 PM
+
+</p>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 Student Portal
+
+</p>
+
+<p>
+
+Designed following
+WCAG 2.1 Accessibility Guidelines
+
+</p>
+
+</footer>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<button
+id="menuBtn"
+type="button"
+aria-expanded="false"
+aria-label="Toggle Navigation Menu">
+
+☰ Menu
+
+</button>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+<!-- CSS Variables Polyfill -->
+
+<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+
+<script>
+
+cssVars({
+
+watch:true
+
+});
+
+</script>
+
+</body>
+
+</html>
